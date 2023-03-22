@@ -19,6 +19,7 @@ body {
     width:300px;
     height:100vh;
     background:black;
+    color:white;
     padding:20px;
 }
 .main-home{
@@ -47,7 +48,7 @@ body {
     width:80px;
     height:80px;
     border-radius:50%;
-    border:2px solid red;
+    border:2px solid rgb(141, 40, 129);
 }
 .profile-img img{
     width:70px;
@@ -95,10 +96,12 @@ body {
     display:flex;
     align-items:center;
     line-height:40px;
+    color:white;
 }
-.menu a:hover,
+.menu a:hover, a:link
 .menu .active{
-    color:rgb(255, 255, 255);   
+    text-decoration:none;
+    color: white;
 }
 .menu .icon{
     margin-right:1rem;
@@ -111,7 +114,7 @@ body {
     right:0;
     width:2px;
     height:17px;
-    background:red;
+    background:rgb(255, 255, 255);
 }
 
 /* -------------------Main Home------------------- */
@@ -218,7 +221,7 @@ body {
     height:70px;
     border-radius:50%;
     color:green;
-    background:hsla(246, 100%, 67%, 0.7)
+    background:hsla(246, 68%, 60%, 0.7)
 }  
 .feed{
     display:flex;
