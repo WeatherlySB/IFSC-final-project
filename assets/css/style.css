@@ -7,12 +7,17 @@
     list-style: none;
     text-decoration: none;
 }
+@media all and (min-width: 0px) and (max-width: 500px) {
+    #shrinkbar {
+      display: none !important;
+    }
+  }
 body {
     background: rgb(0, 0, 0);
     color:white;
 }
 :root{
-    --gradient: linear-gradient(to right, #a624d9, #fcac46);
+    --gradient: linear-gradient(to right, #a624d9, #46f6fc);
 }
 .sidebar{
     position:fixed;
@@ -243,8 +248,8 @@ body {
 }
 .main-posts{
     display:grid;
-    grid-template-rows:repeat(auto-fit, minmax(300px, auto));
-   gap:10px;
+   padding-right:45%;
+   gap:15px;
 }
 .post-box{
     width:300px;
