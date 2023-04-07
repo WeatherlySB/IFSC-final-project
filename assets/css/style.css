@@ -213,9 +213,6 @@ body {
     border-radius:50%;
     object-position:center;
 }
-.stories-img.color{
-    border:2px solid pink;
-}
 .stories-img .add{
     position:absolute;
     display:flex;
@@ -228,6 +225,25 @@ body {
     color:green;
     background:hsla(246, 68%, 60%, 0.7)
 }  
+.stories-popup{
+    width: 400px;
+    background:red;
+    border-radius:6px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    
+    text-align:center;
+    padding: 0 30px 30px;
+    color:green;
+    visibility:hidden;
+}
+.open-popup{
+    visibility:visible;
+    top:50;
+   
+}
+
 .feed{
     display:flex;
     align-items:center;

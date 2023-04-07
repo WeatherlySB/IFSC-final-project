@@ -113,7 +113,7 @@
             <i class="ri-mail-unread-fill"></i>
             <!-- -----------Button section------------- -->
             <a href="#" class="btn">
-            <div class="btn-text">Add Photo</div>
+            <div class="btn-text">Navigation</div>
             </a>
         </div>
     </div> <!-- header -->
@@ -127,39 +127,38 @@
     </div> <!-- stories-title-->
     <!-- ----------Stories section------------------ -->
     <div class="stories">
+
         <!-- Stories 1 -->
-        <div class="stories-img color">
+       
+        <button type="submit" class="stories-img" onclick="openPopup()">
             <img src="assets/img/turtle.jpg" alt="placeholder-3">
-        </div> <!-- stories-img color -->
+        </button> <!-- stories-img color -->
+        <div class="stories-popup" id="stories-popup">
+            <p>The history of local newspapers in England, the emergence of the penny press, and the era of yellow journalism all raise important ethical concerns related to advertising in the media. </p>
+       <button type="button" onclick="closePopup()">OK</button>
+        </div> <!-- stories-popup stories-popup -->
+
+
          <!-- Stories 2 -->
-         <div class="stories-img">
+         <button class="stories-img">
             <img src="assets/img/turtle.jpg" alt="placeholder-3">
-        </div>
+         </button>
          <!-- Stories 3 -->
-         <div class="stories-img">
+         <button class="stories-img">
             <img src="assets/img/turtle.jpg" alt="placeholder-3">
-        </div>
+         </button>
          <!-- Stories 4 -->
-         <div class="stories-img">
+         <button class="stories-img">
             <img src="assets/img/turtle.jpg" alt="placeholder-3">
-        </div>
+         </button>
          <!-- Stories 5 -->
-         <div class="stories-img">
+         <button class="stories-img">
             <img src="assets/img/turtle.jpg" alt="placeholder-3">
-        </div>
+         </button>
          <!-- Stories 6 -->
-         <div class="stories-img">
+         <button class="stories-img">
             <img src="assets/img/turtle.jpg" alt="placeholder-3">
-        </div>
-         <!-- Stories 7 -->
-         <div class="stories-img">
-            <img src="assets/img/turtle.jpg" alt="placeholder-3">
-        </div>
-         <!-- Stories 8 -->
-         <div class="stories-img">
-            <img src="assets/img/turtle.jpg" alt="placeholder-3">
-        </div>
-         <!-- Stories 9 -->
+         </button>
         
     </div> <!-- stories -->
     <!-- ---------------main posts section--------------------- -->
@@ -251,5 +250,16 @@
         </div> <!-- post-box -->
     </div> <!-- main-posts -->
 </div> <!-- main-home -->
+
+<script>
+    let popup = document.getElementById("stories-popup");
+
+    function openPopup(){
+        popup.classList.add("open-popup");
+    }
+    function closePopup(){
+        popup.classLiist.remove("open-popup");
+    }
+</script>
 </body>
 </html>
