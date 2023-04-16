@@ -128,37 +128,41 @@
     <!-- ----------Stories section------------------ -->
     <div class="stories">
 
-        <!-- Stories 1 -->
-       
-        <button type="submit" class="stories-img" onclick="openPopup()">
-            <img src="assets/img/turtle.jpg" alt="placeholder-3">
-        </button> <!-- stories-img color -->
-        <div class="stories-popup" id="stories-popup">
-            <p>The history of local newspapers in England, the emergence of the penny press, and the era of yellow journalism all raise important ethical concerns related to advertising in the media. </p>
-       <button type="button" onclick="closePopup()">OK</button>
-        </div> <!-- stories-popup stories-popup -->
+        <button id="popup-btn">
+            <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="Popup Button">
+          </button>
+          
+          <div id="popup-container">
+            <div id="popup-content">
+              <h2>Popup Content</h2>
+              <p>This is the content of the popup.</p>
+            </div>
+            <button id="close-btn">Close</button>
+          </div>
 
+          <button id="popup-btn">
+            <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="Popup Button">
+          </button>
+          
+          <div id="popup-container">
+            <div id="popup-content">
+              <h2>Popup Content</h2>
+              <p>This is the content of the popup.</p>
+            </div>
+            <button id="close-btn">Close</button>
+          </div>
 
-         <!-- Stories 2 -->
-         <button class="stories-img">
-            <img src="assets/img/turtle.jpg" alt="placeholder-3">
-         </button>
-         <!-- Stories 3 -->
-         <button class="stories-img">
-            <img src="assets/img/turtle.jpg" alt="placeholder-3">
-         </button>
-         <!-- Stories 4 -->
-         <button class="stories-img">
-            <img src="assets/img/turtle.jpg" alt="placeholder-3">
-         </button>
-         <!-- Stories 5 -->
-         <button class="stories-img">
-            <img src="assets/img/turtle.jpg" alt="placeholder-3">
-         </button>
-         <!-- Stories 6 -->
-         <button class="stories-img">
-            <img src="assets/img/turtle.jpg" alt="placeholder-3">
-         </button>
+          <button id="popup-btn">
+            <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="Popup Button">
+          </button>
+          
+          <div id="popup-container">
+            <div id="popup-content">
+              <h2>Popup Content</h2>
+              <p>This is the content of the popup.</p>
+            </div>
+            <button id="close-btn">Close</button>
+          </div>
         
     </div> <!-- stories -->
     <!-- ---------------main posts section--------------------- -->
@@ -252,14 +256,17 @@
 </div> <!-- main-home -->
 
 <script>
-    let popup = document.getElementById("stories-popup");
+    const popupBtn = document.getElementById('popup-btn');
+const popupContainer = document.getElementById('popup-container');
+const closeBtn = document.getElementById('close-btn');
 
-    function openPopup(){
-        popup.classList.add("open-popup");
-    }
-    function closePopup(){
-        popup.classLiist.remove("open-popup");
-    }
+popupBtn.addEventListener('click', () => {
+  popupContainer.style.display = 'block';
+});
+
+closeBtn.addEventListener('click', () => {
+  popupContainer.style.display = 'none';
+});
 </script>
 </body>
 </html>
