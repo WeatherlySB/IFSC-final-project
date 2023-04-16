@@ -173,21 +173,17 @@ body {
 }
 #popup-btn {
   bottom: 20px;
-  right: 20px;
   width: 60px;
   height: 60px;
-  background-color: #f00;
   border-radius: 50%;
   z-index: 9999;
 }
-
 #popup-btn img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 50%;
 }
-
 #popup-container {
   display: none;
   position: fixed;
@@ -199,22 +195,19 @@ body {
   max-width: 500px;
   max-height: 80%;
   overflow: auto;
-  padding: 20px;
+  left: 50%;
   border-radius: 10px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 20px rgba(147, 25, 25, 0.2);
   z-index: 9998;
 }
-
 #popup-container h2 {
   font-size: 24px;
   margin-top: 0;
 }
-
 #popup-container p {
   font-size: 16px;
   line-height: 1.5;
 }
-
 #close-btn {
   display: block;
   margin: 20px auto 0;
