@@ -126,45 +126,44 @@
         </a>
     </div> <!-- stories-title-->
     <!-- ----------Stories section------------------ -->
-    <div class="stories">
-
-        <button id="popup-btn">
-            <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="Popup Button">
-          </button>
-          
-          <div id="popup-container">
-            <div id="popup-content">
-              <h2>Popup Content</h2>
-              <p>This is the content of the popup.</p>
+    
+    <div id="stories-wrapper">
+        <div id="stories-container">
+          <a class="story">
+            <div class="profile">
+              <img src="https://www.w3schools.com/w3images/avatar2.png" alt="" />
             </div>
-            <button id="close-btn">Close</button>
-          </div>
-
-          <button id="popup-btn">
-            <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="Popup Button">
-          </button>
-          
-          <div id="popup-container">
-            <div id="popup-content">
-              <h2>Popup Content</h2>
-              <p>This is the content of the popup.</p>
+            <div class="title">John Smith</div>
+          </a>
+          <a class="story">
+            <div class="profile">
+              <img src="https://www.w3schools.com/w3images/avatar3.png" alt="" />
             </div>
-            <button id="close-btn">Close</button>
-          </div>
-
-          <button id="popup-btn">
-            <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="Popup Button">
-          </button>
-          
-          <div id="popup-container">
-            <div id="popup-content">
-              <h2>Popup Content</h2>
-              <p>This is the content of the popup.</p>
+            <div class="title">George Lucas</div>
+          </a>
+          <a class="story">
+            <div class="profile">
+              <img src="https://www.w3schools.com/w3images/avatar4.png" alt="" />
             </div>
-            <button id="close-btn">Close</button>
-          </div>
-        
-    </div> <!-- stories -->
+            <div class="title">Elizabeth Taylor</div>
+          </a>
+          <a class="story">
+            <div class="profile">
+              <img src="https://www.w3schools.com/w3images/avatar5.png" alt="" />
+            </div>
+            <div class="title">Catherine Jones</div>
+          </a>
+          <a class="story">
+            <div class="profile visited">
+              <img src="https://www.w3schools.com/w3images/avatar1.png" alt="" />
+            </div>
+            <div class="title">Peter Rabbit</div>
+          </a>
+        </div>
+      </div>
+
+
+
     <!-- ---------------main posts section--------------------- -->
     <div class="feed">
         <h1>Feed</h1>
@@ -267,6 +266,22 @@ popupBtn.addEventListener('click', () => {
 closeBtn.addEventListener('click', () => {
   popupContainer.style.display = 'none';
 });
+
+
+const stories = document.querySelectorAll('#stories-container .story');
+
+stories.forEach((story) => {
+  story.addEventListener('click', () => {
+    stories.forEach((s) => {
+      s.classList.remove('active');
+    });
+
+    if (!story.querySelector('.profile').classList.contains('visited')) {
+      story.classList.add('active');
+    }
+  });
+});
+
 </script>
 </body>
 </html>
