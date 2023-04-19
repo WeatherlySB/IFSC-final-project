@@ -127,40 +127,32 @@
     </div> <!-- stories-title-->
     <!-- ----------Stories section------------------ -->
     
-    <div id="stories-wrapper">
-        <div id="stories-container">
-          <a class="story">
-            <div class="profile">
-              <img src="https://www.w3schools.com/w3images/avatar2.png" alt="" />
-            </div>
-            <div class="title">John Smith</div>
-          </a>
-          <a class="story">
-            <div class="profile">
-              <img src="https://www.w3schools.com/w3images/avatar3.png" alt="" />
-            </div>
-            <div class="title">George Lucas</div>
-          </a>
-          <a class="story">
-            <div class="profile">
-              <img src="https://www.w3schools.com/w3images/avatar4.png" alt="" />
-            </div>
-            <div class="title">Elizabeth Taylor</div>
-          </a>
-          <a class="story">
-            <div class="profile">
-              <img src="https://www.w3schools.com/w3images/avatar5.png" alt="" />
-            </div>
-            <div class="title">Catherine Jones</div>
-          </a>
-          <a class="story">
-            <div class="profile visited">
-              <img src="https://www.w3schools.com/w3images/avatar1.png" alt="" />
-            </div>
-            <div class="title">Peter Rabbit</div>
-          </a>
-        </div>
-      </div>
+    <div class="circle" onclick="openPopup('popup1')">1</div>
+
+	<!-- Button 2 -->
+	<div class="circle" onclick="openPopup('popup2')">2</div>
+
+	<!-- Button 3 -->
+	<div class="circle" onclick="openPopup('popup3')">3</div>
+
+	<!-- Popups -->
+	<div id="popup1" style="display:none;">
+		<h2>Popup 1</h2>
+		<p>This is the content for Popup 1.</p>
+		<button onclick="closePopup('popup1')">Close</button>
+	</div>
+
+	<div id="popup2" style="display:none;">
+		<h2>Popup 2</h2>
+		<p>This is the content for Popup 2.</p>
+		<button onclick="closePopup('popup2')">Close</button>
+	</div>
+
+	<div id="popup3" style="display:none;">
+		<h2>Popup 3</h2>
+		<p>This is the content for Popup 3.</p>
+		<button onclick="closePopup('popup3')">Close</button>
+	</div>
 
 
 
@@ -255,32 +247,16 @@
 </div> <!-- main-home -->
 
 <script>
-    const popupBtn = document.getElementById('popup-btn');
-const popupContainer = document.getElementById('popup-container');
-const closeBtn = document.getElementById('close-btn');
+   function openPopup(id) {
+			document.getElementById(id).style.display = "block";
+		}
 
-popupBtn.addEventListener('click', () => {
-  popupContainer.style.display = 'block';
-});
+		// Function to close popup
+		function closePopup(id) {
+			document.getElementById(id).style.display = "none";
+		}
 
-closeBtn.addEventListener('click', () => {
-  popupContainer.style.display = 'none';
-});
-
-
-const stories = document.querySelectorAll('#stories-container .story');
-
-stories.forEach((story) => {
-  story.addEventListener('click', () => {
-    stories.forEach((s) => {
-      s.classList.remove('active');
-    });
-
-    if (!story.querySelector('.profile').classList.contains('visited')) {
-      story.classList.add('active');
-    }
-  });
-});
+       
 
 </script>
 </body>
