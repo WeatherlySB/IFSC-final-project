@@ -192,38 +192,6 @@ body {
     cursor: pointer;
     margin: 0 5px;
   }
-  
-  .story .profile {
-    background: rgb(255, 201, 0);
-    background: linear-gradient(
-      36deg,
-      rgb(255, 201, 0) 13%,
-      rgb(255, 0, 95) 73%,
-      rgb(255, 9, 237) 100%
-    );
-    padding: 5px;
-    margin: 5px;
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-  }
-  
-  .story .profile img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    padding: 0;
-    margin: 0;
-    border: 5px solid var(--bg-color);
-    box-sizing: content-box;
-  }
-  
-  .story {
-    text-align: center;
-    padding: 5px 0;
-  }
-  
-  
 
   .circle {
     display: inline-block;
