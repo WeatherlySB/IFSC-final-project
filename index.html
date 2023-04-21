@@ -127,32 +127,11 @@
     </div> <!-- stories-title-->
     <!-- ----------Stories section------------------ -->
     
-    <div class="circle" onclick="openPopup('popup1')">1</div>
-
-	<!-- Button 2 -->
-	<div class="circle" onclick="openPopup('popup2')">2</div>
-
-	<!-- Button 3 -->
-	<div class="circle" onclick="openPopup('popup3')">3</div>
-
-	<!-- Popups -->
-	<div id="popup1" style="display:none;">
-		<h2>Popup 1</h2>
-		<p>This is the content for Popup 1.</p>
-		<button onclick="closePopup('popup1')">Close</button>
-	</div>
-
-	<div id="popup2" style="display:none;">
-		<h2>Popup 2</h2>
-		<p>This is the content for Popup 2.</p>
-		<button onclick="closePopup('popup2')">Close</button>
-	</div>
-
-	<div id="popup3" style="display:none;">
-		<h2>Popup 3</h2>
-		<p>This is the content for Popup 3.</p>
-		<button onclick="closePopup('popup3')">Close</button>
-	</div>
+    <button id="popup-button"><img src="circular-image.png" alt="Popup Button"></button>
+    <div id="popup-box">
+      <p>This is the popup box content.</p>
+      <button id="popup-close">OK</button>
+    </div>
 
 
 
@@ -254,14 +233,17 @@
 </div> <!-- main-home -->
 
 <script>
-   function openPopup(id) {
-			document.getElementById(id).style.display = "block";
-		}
+   const popupButton = document.getElementById('popup-button');
+const popupBox = document.getElementById('popup-box');
+const popupClose = document.getElementById('popup-close');
 
-		// Function to close popup
-		function closePopup(id) {
-			document.getElementById(id).style.display = "none";
-		}
+popupButton.addEventListener('click', () => {
+  popupBox.style.display = 'block';
+});
+
+popupClose.addEventListener('click', () => {
+  popupBox.style.display = 'none';
+});
 
        
 
