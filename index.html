@@ -127,23 +127,17 @@
     </div> <!-- stories-title-->
     <!-- ----------Stories section------------------ -->
     <div class="popups">
-    <button id="popup-button"><img src="circular-image.png" alt="Popup Button"></button>
-    <div id="popup-box">
-      <p>This is the popup box content.</p>
-      <button id="popup-close">OK</button>
-    </div>
-
-    <button id="popup-button-1"><img src="circular-image.png" alt="Popup Button"></button>
-    <div id="popup-box">
-      <p>This is the popup box content.</p>
-      <button id="popup-close">OK</button>
-    </div>
-
-    <button id="popup-button-2"><img src="circular-image.png" alt="Popup Button"></button>
-    <div id="popup-box">
-      <p>This is the popup box content.</p>
-      <button id="popup-close">OK</button>
-    </div> <!-- popup-box -->
+        <button id="popup-button-1"><img src="circular-image.png" alt="Popup Button"></button>
+        <div id="popup-box-1">
+          <p>This is the popup box content for button 1.</p>
+          <button id="popup-close-1">OK</button>
+        </div>
+        
+        <button id="popup-button-2"><img src="circular-image.png" alt="Popup Button"></button>
+        <div id="popup-box-2">
+          <p>This is the popup box content for button 2.</p>
+          <button id="popup-close-2">OK</button>
+        </div>
 </div> <!-- popups --> 
 
 
@@ -246,19 +240,29 @@
 </div> <!-- main-home -->
 
 <script>
-   const popupButton = document.getElementById('popup-button');
-const popupBox = document.getElementById('popup-box');
-const popupClose = document.getElementById('popup-close');
+ const popupButton1 = document.getElementById('popup-button-1');
+  const popupBox1 = document.getElementById('popup-box-1');
+  const popupClose1 = document.getElementById('popup-close-1');
 
-popupButton.addEventListener('click', () => {
-  popupBox.style.display = 'block';
-});
+  popupButton1.addEventListener('click', () => {
+    popupBox1.style.display = 'block';
+  });
 
-popupClose.addEventListener('click', () => {
-  popupBox.style.display = 'none';
-});
+  popupClose1.addEventListener('click', () => {
+    popupBox1.style.display = 'none';
+  });
 
-       
+  const popupButton2 = document.getElementById('popup-button-2');
+  const popupBox2 = document.getElementById('popup-box-2');
+  const popupClose2 = document.getElementById('popup-close-2');
+
+  popupButton2.addEventListener('click', () => {
+    popupBox2.style.display = 'block';
+  });
+
+  popupClose2.addEventListener('click', () => {
+    popupBox2.style.display = 'none';
+  }); 
 
 </script>
 </body>
