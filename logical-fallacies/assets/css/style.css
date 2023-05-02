@@ -1,4 +1,5 @@
 
+
 :root {
     font-size: 10px;
 }
@@ -8,6 +9,31 @@
 *::after {
     box-sizing: border-box;
 }
+.navbar {
+    overflow: hidden;
+    background-color: #000000;
+    
+    position: absolute; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 110%; /* Full width */
+    margin-left:-8px;
+  }
+  
+  /* Links inside the navbar */
+  .navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+  }
+  
+  /* Change background on mouse-over */
+  .navbar a:hover {
+    background: #ddd;
+    color: black;
+  }
 
 body {
     font-family: "Open Sans", Arial, sans-serif;
@@ -16,7 +42,6 @@ body {
     color: #262626;
     padding-bottom: 3rem;
 }
-
 img {
     display: block;
 }
@@ -195,19 +220,6 @@ img {
     height: 100%;
     object-fit: cover;
 }
-
-/* Loader */
-
-.loader {
-    width: 5rem;
-    height: 5rem;
-    border: 0.6rem solid #999;
-    border-bottom-color: transparent;
-    border-radius: 50%;
-    margin: 0 auto;
-    animation: loader 500ms linear infinite;
-}
-
 /* Media Query */
 
 @media screen and (max-width: 40rem) {
@@ -292,19 +304,7 @@ img {
 
 /* Spinner Animation */
 
-@keyframes loader {
-    to {
-        transform: rotate(360deg);
-    }
-}
 
-/*
-
-The following code will only run if your browser supports CSS grid.
-
-Remove or comment-out the code block below to see how the browser will fall-back to flexbox & floated styling. 
-
-*/
 
 @supports (display: grid) {
     .profile {
