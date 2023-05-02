@@ -19,22 +19,23 @@ body {
 :root{
     --gradient: linear-gradient(to right, #a624d9, #46f6fc);
 }
+
 .sidebar{
     position:fixed;
-    width:300px;
+    width:250px;
     height:100vh;
     background:black;
     color:white;
     padding:20px;
 }
+
 .main-home{
     position:absolute;
-    width:calc(100% - 300px);
     top:0;
     left:300px;
     background:black;
     border-radius:1rem 0 0 1rem;
-    z-index: 1000;
+   
 }
 .logo img{
     width:80px;
