@@ -22,7 +22,7 @@ body {
 
 .sidebar{
     position:fixed;
-    width:250px;
+    width:300px;
     height:100vh;
     background:black;
     color:white;
@@ -304,6 +304,7 @@ body {
     background:hsla(246, 68%, 60%, 0.7)
 }  
 
+/* ------------------- feed and posts section -------------------- */
 .feed{
     display:flex;
     align-items:center;
@@ -328,14 +329,19 @@ body {
    gap:15px;
 }
 .post-box{
-    width:300px;
+    width:100%;
+    height:200%;
     margin:auto;
+    padding-left:20px;
 }
 .post-box img{
     width:140%;
     height:480px;
     object-fit:cover;
     border-radius:0.5rem;
+}
+.crystal-img img {
+    margin:auto;
 }
 .post-info{
     display:flex;
