@@ -339,7 +339,7 @@ body {
 .post-box img{
     width:140%;
     height:480px;
-    object-fit:inherit;
+    object-fit:cover;
     border-radius:0.5rem;
 }
 .crystal-img img {
@@ -354,7 +354,7 @@ body {
     display:flex;
     align-items:center;
     justify-content:center;
-    width:35px;
+    width:auto;
     height:35px;
     border:2px solid red;
     border-radius:50%;
