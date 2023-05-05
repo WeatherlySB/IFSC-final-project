@@ -88,7 +88,7 @@ img {
 
 .profile-image {
     float: left;
-    width: calc(33.333% - 1rem);
+   
     display: flex;
     justify-content: center;
     align-items: center;
@@ -97,13 +97,15 @@ img {
 
 .profile-image img {
     border-radius: 50%;
+    width:150px;
+    height:150px;
 }
 
 .profile-user-settings,
 .profile-stats,
 .profile-bio {
     float: left;
-    width: calc(66.666% - 2rem);
+    width: calc(66.666% - 10rem);
 }
 
 .profile-user-settings {
