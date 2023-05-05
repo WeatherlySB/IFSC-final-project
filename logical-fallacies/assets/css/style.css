@@ -2,6 +2,7 @@
 
 :root {
     font-size: 10px;
+    overflow-x:hidden;
 }
 
 *,
@@ -95,8 +96,11 @@ img {
     margin-right: 3rem;
 }
 
+
 .profile-image img {
     border-radius: 50%;
+    width:150px;
+    height:150px;
 }
 
 .profile-user-settings,
