@@ -167,10 +167,12 @@ img {
     display: none;
 }
 
-.gallery-item-info li {
+
+.gallery-item-info p {
     display: inline-block;
-    font-size: 1.7rem;
-    font-weight: 600;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-left:4px;
 }
 
 .gallery-item-likes {
