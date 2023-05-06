@@ -37,8 +37,8 @@
 body {
   font-family: "Open Sans", Arial, sans-serif;
   min-height: 100vh;
-  background-color: #fafafa;
-  color: #262626;
+  background-color: #000000;
+  color: #feecd1;
   padding-bottom: 3rem;
 }
 img {
@@ -96,6 +96,8 @@ img {
 
 .profile-image img {
   border-radius: 50%;
+  width:150px;
+  height:150px;
 }
 
 .profile-user-settings,
